@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "autoprefixer": "*",
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-cssnano": "*",
+    "gulp-imagemin": "*",
+    "gulp-jshint": "*",
+    "gulp-postcss": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "lost": "*"
+  }
+}
