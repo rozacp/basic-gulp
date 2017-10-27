@@ -5,7 +5,7 @@ var	lost = require('lost');
 var	autoprefixer = require('autoprefixer');
 var	nano = require('gulp-cssnano');
 var	rename = require('gulp-rename');
-// var	jshint = require('gulp-jshint');
+var	jshint = require('gulp-jshint');
 var	concat = require('gulp-concat');
 var	uglify = require('gulp-uglify');
 var	imagemin = require('gulp-imagemin');
@@ -36,15 +36,15 @@ gulp.task('css', function() {
 });
 
 
-// gulp.task('jshint', function() {
+gulp.task('jshint', function() {
 
-// 	return gulp.src(path.js)
-// 		.pipe(jshint())
-// 		.pipe(jshint.reporter('default'));
-// });
+	return gulp.src(path.js)
+		.pipe(jshint())
+		.pipe(jshint.reporter('default'));
+});
 
 
-gulp.task('js', function() { // , ['jshint']
+gulp.task('js', function() {
 
 	return gulp.src(path.js)
 		.pipe(concat('main.min.js'))
